@@ -12,7 +12,8 @@ My Own Azure Resume, follow along
 
 - I was also having trouble with CosmosDB being underlined red I found a solution to this by downloading this https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB and changing collectionName to containerName and also instead of ConnectionStringSetting I just did connection
 
-- Another Issue I had was the API not loading the number of visitors on my webpage I chagned ```
+- Another Issue I had was the API not loading the number of visitors on my webpage I changed the code below and it seemed to fix it 
+```
 const getVisitCount = () => {
     let count = 30;
     fetch(functionApi).then(response => {
@@ -25,9 +26,9 @@ const getVisitCount = () => {
         console.log(error);
     });
     return count;
-``` to 
-
-```})
+```
+```
+})
 
 const functionApi = 'http://localhost:7071/api/GetResumeCounter';
 
