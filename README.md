@@ -30,7 +30,7 @@ const getVisitCount = () => {
 ```
 })
 
-const functionApi = 'http://localhost:7071/api/GetResumeCounter';
+const functionApi = 'enter api link';
 
 const getVisitCount = () => {
     fetch(functionApi)
